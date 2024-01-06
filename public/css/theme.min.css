@@ -424,7 +424,8 @@ body {
     font-weight: var(--dashui-body-font-weight);
     line-height: var(--dashui-body-line-height);
     margin: 0;
-    text-align: var(--dashui-body-text-align)
+    text-align: var(--dashui-body-text-align);
+    max-width: 900px;
 }
 
 hr {
@@ -29191,7 +29192,6 @@ fieldset:disabled .btn {
 .app-content-area {
     padding: 80px 10px 20px;
     min-width: 100vw;
-    
 }
 
 [data-layout=horizontal] #main-wrapper {
@@ -35546,8 +35546,4 @@ div.table-responsive>div.dataTables_wrapper>div.row {
     border: 2px dashed var(--dashui-gray-300) !important;
     min-height: 150px;
     padding: 20px
-}
-
-.bg-content {
-    width: 80%;
 }

@@ -17,8 +17,8 @@
             @include('layouts.sidebar')
             @yield('content')
         </div>
-        @include('layouts.footer')
     </div>
+    @include('layouts.footer')
     <script src="{{ asset('js/sidebar.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 </body>

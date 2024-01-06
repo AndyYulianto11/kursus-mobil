@@ -5,17 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class DataPresensi extends Model
+class DataNilai extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'id_kursus',
-        'pertemuan',
-        'tanggal',
-        'jam',
-        'status',
-        'lokasi'
+        'nilai_keterampilan',
+        'nilai_pengetahuan',
+        'presensi',
+        'nilai_akhir',
+        'status'
     ];
 
     protected $with = ['getKursus'];

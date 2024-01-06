@@ -1,3 +1,7 @@
+body{
+    max-width: 900px;
+}
+
 .lg-background{
     margin: 0;
     background-image: url('../images/background/hebfsa.png');
