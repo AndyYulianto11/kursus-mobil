@@ -1,7 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{HomeController, PerusahaanController};
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +14,11 @@ use App\Http\Controllers\{HomeController, PerusahaanController};
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
-Route::resource('perusahaan', PerusahaanController::class);
+Route::view('/', 'pages.landing');
+Route::view('/dashboard', 'pages.dashboard');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
